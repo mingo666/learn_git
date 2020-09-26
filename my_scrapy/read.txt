@@ -1,0 +1,15 @@
+scrapy startproject my_scrapy        # 创建一个项目
+cd my_scrapy                         # 进入项目目录
+cd my_scrapy                         # 在进入对应的位置。
+scrapy genspider my_movies douban.com   # 创建my_movies 爬虫
+
+会生成几个文件
+spiders       文件加--实现爬虫的python文件
+settings.py   项目设置文件
+scrapy.cfg    项目配置文件
+items.py      定义所爬去记录的数据结构
+pipelines.py  设置保持位置
+my_movies.py  编写爬虫逻辑
+
+-命令行工具之   scrapy runspider     （全局命令）
+-命令行工具之   scrapy crawl         （项目级命令）
